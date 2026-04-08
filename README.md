@@ -24,10 +24,6 @@
 
 本项目实现了一种**基于核密度估计（KDE）的视频背景建模与运动目标检测**系统，支持 Epanechnikov 核与高斯核两种核函数。通过对训练帧的逐像素灰度历史建立非参数概率密度模型，以密度阈值实现前景/背景二值分离，并提供三维概率密度可视化功能。
 
-本项目为东华大学《机器学习》课程第一次大作业的配套代码，论文题目为：
-
-> **基于 Epanechnikov 核函数三维核密度估计的运动目标二值检测研究**
-
 ### 核心特性
 
 - 🔲 **双核函数支持**：Epanechnikov 核（紧支撑，计算高效）与高斯核（无限支撑，平滑性好）
@@ -178,18 +174,8 @@ dataset/
 - 背景模型为静态（不支持在线更新），对动态背景场景效果较差
 - 单通道灰度建模，忽略颜色信息
 
-### 引用
 
-如果本项目对您的研究有所帮助，欢迎引用：
 
-```bibtex
-@misc{shi2026kde,
-  author = {石墨凡},
-  title  = {基于 Epanechnikov 核函数三维核密度估计的运动目标二值检测},
-  year   = {2026},
-  url    = {https://github.com/SHIMOFAN/KDE_report}
-}
-```
 
 ---
 
@@ -200,10 +186,6 @@ dataset/
 ### Overview
 
 This project implements a **Kernel Density Estimation (KDE)-based video background modeling and moving object detection** system. It supports both the Epanechnikov kernel and the Gaussian kernel. A non-parametric per-pixel probability density model is built from the grayscale history of training frames, and foreground/background binary separation is achieved by thresholding the estimated density. A 3D probability density surface visualization is also included.
-
-This codebase accompanies the course project for *Machine Learning* at Donghua University:
-
-> **A Study on Binary Detection of Moving Objects Using 3D KDE Based on the Epanechnikov Kernel**
 
 ### Features
 
@@ -355,18 +337,6 @@ dataset/
 - The background model is **static** (no online update), reducing robustness on dynamic background scenes
 - **Single-channel grayscale** modeling ignores color information
 
-### Citation
-
-If you find this project useful, please consider citing:
-
-```bibtex
-@misc{shi2026kde,
-  author = {Shi, Mofan},
-  title  = {Binary Detection of Moving Objects Using 3D KDE Based on the Epanechnikov Kernel},
-  year   = {2026},
-  url    = {https://github.com/SHIMOFAN/KDE_report}
-}
-```
 
 ### License
 
