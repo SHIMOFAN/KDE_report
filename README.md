@@ -126,19 +126,6 @@ python evaluate.py \
 | `--roi`          | str  | `ROI.bmp` 路径（不填则自动在 gt_dir 查找）  |
 | `--temporal_roi` | str  | `temporalROI.txt` 路径（同上）              |
 
-### 方法原理
-
-给定训练集中 $N$ 帧的像素灰度值历史 $\{x_1, x_2, \ldots, x_N\}$，对当前帧像素 $x$ 的概率密度估计为：
-
-$$\hat{f}(x) = \frac{1}{N \cdot h} \sum_{i=1}^{N} K\!\left(\frac{x - x_i}{h}\right)$$
-
-其中 $h$ 为带宽，$K(\cdot)$ 为核函数。当 $\hat{f}(x) < \tau$（阈值）时，该像素判定为**前景**。
-
-**Epanechnikov 核**（本项目推荐）：
-
-$$K(u) = \frac{3}{4}(1 - u^2) \cdot \mathbf{1}_{|u| \leq 1}$$
-
-具有紧支撑性，计算量显著低于高斯核。
 
 ### 数据集
 
