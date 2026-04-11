@@ -1,4 +1,4 @@
-# KDE_report
+# KDE
 <div align="center">
 
 # KDE-Background-Detector
